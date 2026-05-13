@@ -18,7 +18,6 @@ flowchart LR
   E --> F[解析 imports（JS → WASM）]
   F --> H[创建 Instance（带独立状态）]
   H --> G[暴露 exports 给 JS]
-  
 ```
 + JS 和WASM共享同一块内存
 + WASM不能直接访问JS对象
