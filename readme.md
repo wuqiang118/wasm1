@@ -12,12 +12,12 @@ component-model
 ```mermaid
 flowchart TD
   A["JS调用instantiate()"] --> B["解码和验证WASM二进制"]
-  B --> C[编译为本地机器码(JIT,AOT)]
-  C --> D[分配线性内存(Memory Object)]
-  D --> E[创建函数表（Table Object）]
-  E --> F[解析 imports(JS到WASM)]
-  F --> H[创建 Instance(带独立状态)]
-  H --> G[暴露 exports 给 JS]
+  B --> C["编译为本地机器码(JIT,AOT)"]
+  C --> D["分配线性内存(Memory Object)"]
+  D --> E["创建函数表（Table Object)"]
+  E --> F["解析 imports(JS到WASM)"]
+  F --> H["创建 Instance(带独立状态)"]
+  H --> G["暴露 exports 给 JS"]
 ```
 + JS 和WASM共享同一块内存
 + WASM不能直接访问JS对象
