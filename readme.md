@@ -9,7 +9,7 @@ component-model
 4. wasm实例化内部会完成: 编译，链接， 创建运行时实例， 建立JS wasm边界桥接
 
 # JS中wasm实例化流程:
-```
+```mermaid
 flowchart TD
   A[JS 调用 instantiate()] --> B[解码 & 验证 WASM 二进制]
   B --> C[编译为本地机器码（JIT / AOT）]
