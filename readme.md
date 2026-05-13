@@ -9,7 +9,6 @@ component-model
 4. wasm实例化内部会完成: 编译，链接， 创建运行时实例， 建立JS wasm边界桥接
 
 # JS中wasm实例化流程:
-```
 flowchart LR
   A[JS 调用 instantiate()] --> B[解码和验证 WASM 二进制]
   B --> C[编译为本地机器码（JIT / AOT）]
@@ -18,6 +17,5 @@ flowchart LR
   E --> F[解析 imports（JS → WASM）]
   F --> H[创建 Instance（带独立状态）]
   H --> G[暴露 exports 给 JS]
-```
 + JS 和WASM共享同一块内存
 + WASM不能直接访问JS对象
