@@ -21,3 +21,6 @@ flowchart TD
 ```
 + JS 和WASM共享同一块内存
 + WASM不能直接访问JS对象
+
+# jswasm项目 探索JS和wasm交互,nginx部署后
+![alt](/images/jswasm.png)
