@@ -11,7 +11,7 @@ component-model
 # JS中wasm实例化流程:
 ```mermaid
 flowchart TD
-  A[JS 调用 instantiate()] --> B[解码和验证 WASM 二进制]
+  A[JS调用instantiate()] --> B[解码和验证WASM二进制]
   B --> C[编译为本地机器码(JIT,AOT)]
   C --> D[分配线性内存(Memory Object)]
   D --> E[创建函数表（Table Object）]
