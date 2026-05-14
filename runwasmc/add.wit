@@ -1,0 +1,23 @@
+package docs:calculator@0.1.0;
+
+interface logger {
+    info: func(msg:string);
+}
+
+interface calculate {
+    enum op {
+        add,
+        subtract,
+    }
+
+    eval-expression: func(
+        op: op,
+        x: u32,
+        y: u32
+    ) -> u32;
+}
+
+world calculator {
+    import logger;
+    export calculate;
+}

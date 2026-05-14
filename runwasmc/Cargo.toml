@@ -1,0 +1,9 @@
+[package]
+name = "runwasmc"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.102"
+wasmtime = "44.0.1"
+wasmtime-wasi = "44.0.1"
