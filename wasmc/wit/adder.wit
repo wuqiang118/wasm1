@@ -1,5 +1,9 @@
 package docs:calculator@0.1.0;
 
+interface logger {
+    info: func(msg:string);
+}
+
 interface calculate {
     enum op {
         add,
@@ -14,5 +18,6 @@ interface calculate {
 }
 
 world calculator {
+    import logger;
     export calculate;
 }
