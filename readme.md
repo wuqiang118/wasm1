@@ -284,3 +284,8 @@ wasmtime run --invoke 'eval-expression(add,3,4)'  target/wasm32-wasip2/release/w
 
 ## Wasmtime 是怎么实现 WASI 的
 用 Rust 写一系列“宿主函数”（Host Functions），将这些函数注册到 Wasmtime 的 Linker 中，当 WebAssembly 代码调用 WASI 接口时，就会跳转到这些 Rust 函数里执行，最终由 Rust 代为发起操作系统的真实系统调用。
+
+请看runwasm项目
+
+# 接下来介绍spin项目,它是在wasmtime基础上做的，wasmtime相对于它的发动机.
+
