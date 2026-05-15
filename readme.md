@@ -287,5 +287,7 @@ wasmtime run --invoke 'eval-expression(add,3,4)'  target/wasm32-wasip2/release/w
 
 请看runwasm项目
 
-# 接下来介绍spin项目,它是在wasmtime基础上做的，wasmtime相对于它的发动机.
+# 接下来介绍[spin项目](https://github.com/spinframework/spin),
+它是在wasmtime基础上做的，wasmtime相对于它的发动机，spin相当于整个车子.
 
+[k8s 运行spin,参考spinkube](https://www.spinkube.dev/docs/overview/)
